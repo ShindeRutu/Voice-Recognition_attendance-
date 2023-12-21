@@ -1,0 +1,60 @@
+{% load static %}
+<html>
+<head>
+<title>Smart Voice Based Attendence </title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link href="{% static 'default.css' %}" rel="stylesheet" type="text/css" media="screen" />
+</head>
+<body>
+<div id="wrapper">
+  <div id="header">
+    <div id="logo">
+      <h1><font color="orange" size=6>Smart Attendence System Using Voice Recognition</font></h1>
+	  <marquee><font color="pink" size=4>Smart Voice Based Attendence</font></marquee>
+    </div>
+   
+  
+    </div>
+  </div>
+  <div id="menu">
+    <ul>
+      <li><a href="{% url 'Register' %}">Add New User</a></li>
+      <li><a href="{% url 'TrainModel' %}">Train Voice Recognition Model</a></li>
+      <li><a href="{% url 'ViewAttendence' %}">View Attendence</a></li>
+	  <li><a href="{% url 'Logout' %}">Logout</a></li>
+  </ul>
+  </div>
+  <div id="page">
+   <div id="content">
+      <div class="post">
+        <div class="title">
+          <h2>Smart Voice Based Attendence</h2>
+         </div>
+        <div class="entry">
+		 <br/><br/><br/>
+
+
+<table align="center" border="1">
+			<tr><th><font size="3" color="white">Username</th>
+			<th><font size="3" color="white">Attended Date</th>
+			
+			</tr>
+		
+			{{ data|safe }}
+
+			</table>
+			<br/><br/><br/><br/><br/><br/>
+	 
+	
+          </div>
+        
+      </div>
+     
+       
+       
+    </div>
+    
+  </div>
+
+</body>
+</html>

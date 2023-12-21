@@ -1,0 +1,53 @@
+{% load static %}
+<html>
+<head>
+<title>Smart Voice Based Attendence </title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link href="{% static 'default.css' %}" rel="stylesheet" type="text/css" media="screen" />
+</head>
+<body>
+<div id="wrapper">
+  <div id="header">
+    <div id="logo">
+      <h1><font color="orange" size=6>Smart Attendence System Using Voice Recognition</font></h1>
+	  <marquee><font color="pink" size=4>Smart Voice Based Attendence</font></marquee>
+    </div>
+   
+  
+    </div>
+  </div>
+  <div id="menu">
+    <ul>
+      <li><a href="{% url 'index' %}">Home</a></li>
+      <li><a href="{% url 'User' %}">User</a></li>
+      <li><a href="{% url 'Admin' %}">Admin</a></li>
+  </ul>
+  </div>
+  <div id="page">
+   <div id="content">
+      <div class="post">
+        <div class="title">
+          <h2>Smart Voice Based Attendence</h2>
+         </div>
+        <div class="entry">
+		 <br/><br/><br/>
+{{ data }}
+	 
+	 <br>
+          <p><img src="{% static 'images/images.jpg' %}" alt="" width="890" height="200" class="left" /><p></p><font size="4" color="white">
+          <center><br/>About Smart Voice Based Attendence</center></font></p>
+          <p><font size="" color="white">The main aim of the project is to record the attendance of the students or employees using voice recognition.Python software would be used for the voice recognition attendance system.</p>
+
+ <p><font size="" color="white">The attendance system based on voice recognition that can be used to record the attendance of students & employees because each person has unique characteristic in voice with frequency.This unique character can be recognized and analyzed to store in internal database.</p>
+          </div>
+        
+      </div>
+     
+       
+       
+    </div>
+    
+  </div>
+
+</body>
+</html>
